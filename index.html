@@ -1,43 +1,56 @@
 
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>فروشگاه روزنو</title>
-  <style>
-    body { font-family: sans-serif; direction: rtl; background: #f9f9f9; margin: 0; padding: 0; }
-    header { background: #d32f2f; padding: 20px; color: white; text-align: center; font-size: 24px; }
-    .products { display: grid; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); gap: 20px; padding: 20px; }
-    .product { background: white; padding: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
-    .product img { width: 100%; border-radius: 8px; height: 180px; object-fit: cover; }
-    .product h3 { margin: 10px 0 5px; }
-    .product p { margin: 0; color: #444; }
-    .product a { display: inline-block; margin-top: 10px; background: #4caf50; color: white; padding: 6px 12px; border-radius: 5px; text-decoration: none; }
-    footer { background: #eee; padding: 10px; text-align: center; font-size: 14px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="فروشگاه خانگی فرآورده‌های گوشتی خانگی | سوسیس و کالباس خانگی">
+    <title>فروشگاه روزنو</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>فروشگاه روزنو<br>فروش انواع سوسیس و کالباس خانگی</header>
-  <div class="products">
-    <div class="product">
-      <img src="images/chicken_ham.jpg" alt="ژامبون مرغ خانگی">
-      <h3>ژامبون مرغ خانگی</h3>
-      <p>۲۳۰٬۰۰۰ تومان</p>
-      <a href="product1.html">مشاهده محصول</a>
-    </div>
-    <div class="product">
-      <img src="images/beef_ham.jpg" alt="ژامبون گوشت خانگی">
-      <h3>ژامبون گوشت خانگی</h3>
-      <p>۴۰۰٬۰۰۰ تومان</p>
-      <a href="product2.html">مشاهده محصول</a>
-    </div>
-    <div class="product">
-      <img src="images/cheese_sausage.jpg" alt="سوسیس مرغ پنیری خانگی">
-      <h3>سوسیس مرغ پنیری خانگی</h3>
-      <p>۲۴۰٬۰۰۰ تومان</p>
-      <a href="product3.html">مشاهده محصول</a>
-    </div>
-  </div>
-  <footer>تماس با ما: 09104565404 | اینستاگرام: rooze_nooo | <a href="https://chat.whatsapp.com/Irvg4rjmLuh21nPcGOw9zC" target="_blank">واتس‌اپ</a></footer>
+    <header>
+        <nav>
+            <h1>فروشگاه روزنو</h1>
+            <ul>
+                <li><a href="#products">محصولات</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products" class="products">
+            <h2>محصولات ما</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <h3>سوسیس دودی - نیم کیلو</h3>
+                    <p>۲۲۰ هزار تومان</p>
+                </div>
+                <div class="product">
+                    <h3>کالباس مرغ و قارچ - نیم کیلو</h3>
+                    <p>۲۴۰ هزار تومان</p>
+                </div>
+                <div class="product">
+                    <h3>سوسیس مرغ و گوشت (لیونر) - نیم کیلو</h3>
+                    <p>۲۴۰ هزار تومان</p>
+                </div>
+                <div class="product">
+                    <h3>سوسیس بوقلمون خانگی - نیم کیلو</h3>
+                    <p>۲۴۰ هزار تومان</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>تماس با ما</h2>
+            <p>برای سفارش یا اطلاعات بیشتر از طریق واتساپ در ارتباط باشید.</p>
+            <a class="whatsapp" href="https://wa.me/989123456789" target="_blank">ارسال پیام واتساپ</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 فروشگاه روزنو | تمامی حقوق محفوظ است.</p>
+    </footer>
 </body>
 </html>
