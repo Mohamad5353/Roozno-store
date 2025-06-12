@@ -1,0 +1,89 @@
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.header {
+    background-color: #ef394e;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 2rem 0;
+}
+
+.products-section h2,
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.price {
+    color: #ef394e;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #25d366;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
