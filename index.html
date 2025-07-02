@@ -1,22 +1,35 @@
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <div class="top-bar">
-        <div class="container">
+margin-bottom: 15px;
+        }
+        
+        .add-to-cart {
+            background: #d10a0a;
+            color: white;
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: background 0.3s;
+        }
+        
+        .add-to-cart:hover {
+            background: #b30808;
+        }
+    </style>
+</head>
+<body>
+    <header class="new-header">
+        <div class="header-top">
             <span>ارسال رایگان برای سفارش‌های بالای 300 هزار تومان</span>
-            <div class="top-links">
-                <a href="#">پرسش‌های متداول</a>
-                <a href="#">فروشنده شوید</a>
-                <a href="#">ورود | ثبت‌نام</a>
+            <div>
+                <a href="#" style="color: white; margin-left: 15px; text-decoration: none;">ورود</a>
+                <a href="#" style="color: white; text-decoration: none;">ثبت‌نام</a>
             </div>
         </div>
-    </div>
-    
-    <div class="main-header">
-        <div class="container">
-            <div class="logo">
-                <a href="#">ROOZNO</a>
-            </div>
+        
+        <div class="header-main">
+            <a href="#" class="logo">ROOZNO</a>
             
             <div class="search-box">
                 <input type="text" placeholder="جستجوی محصولات...">
@@ -33,45 +46,60 @@
                 </a>
             </div>
         </div>
-    </div>
+    </header>
     
-    <nav class="main-nav">
-        <div class="container">
-            <ul>
-                <li><a href="#">سوسیس</a></li>
-                <li><a href="#">کالباس</a></li>
-                <li><a href="#">رژیمی</a></li>
-                <li><a href="#">پرفروش‌ها</a></li>
-                <li><a href="#">تخفیف‌دارها</a></li>
-            </ul>
+    <div class="container">
+        <div class="products">
+            <!-- محصول 1 -->
+            <div class="product">
+                <img src="images/sosis-classic.jpg" alt="سوسیس ممتاز">
+                <div class="product-info">
+                    <h3 class="product-title">سوسیس ممتاز گوساله</h3>
+                    <p class="product-price">185,000 تومان</p>
+                    <button class="add-to-cart" onclick="addToCart('سوسیس ممتاز')">افزودن به سبد خرید</button>
+                </div>
+            </div>
+            
+            <!-- محصول 2 -->
+            <div class="product">
+                <img src="images/kalbas-special.jpg" alt="کالباس ویژه">
+                <div class="product-info">
+                    <h3 class="product-title">کالباس خشک ویژه</h3>
+                    <p class="product-price">240,000 تومان</p>
+                    <button class="add-to-cart" onclick="addToCart('کالباس ویژه')">افزودن به سبد خرید</button>
+                </div>
+            </div>
+            
+            <!-- محصول 3 -->
+            <div class="product">
+                <img src="images/sosis-diet.jpg" alt="سوسیس رژیمی">
+                <div class="product-info">
+                    <h3 class="product-title">سوسیس مرغ رژیمی</h3>
+                    <p class="product-price">220,000 تومان</p>
+                    <button class="add-to-cart" onclick="addToCart('سوسیس رژیمی')">افزودن به سبد خرید</button>
+                </div>
+            </div>
+            
+            <!-- محصول 4 -->
+            <div class="product">
+                <img src="images/kalbas-smoked.jpg" alt="کالباس دودی">
+                <div class="product-info">
+                    <h3 class="product-title">کالباس دودی اعلاء</h3>
+                    <p class="product-price">275,000 تومان</p>
+                    <button class="add-to-cart" onclick="addToCart('کالباس دودی')">افزودن به سبد خرید</button>
+                </div>
+            </div>
         </div>
-    </nav>
-</header>
-  <meta charset="UTF-8">
-  <title>فروشگاه روزنو</title>
-  <link rel="stylesheet"href="style.css">
-</head>link rel="stylesheet"href="style.css">
-<body>
-  <h1>محصولات ما</h1>
-  <div class="products">
-    <div class="product">
-      <a href="product1.html">
-        <h2>ژامبون مرغ خانگی - نیم کیلو</h2>
-        <p>۲۳۰,۰۰۰ تومان</p>
-      </a>
     </div>
-    <div class="product">
-      <a href="product2.html">
-        <h2>ژامبون گوشت خانگی - نیم کیلو</h2>
-        <p>۴۰۰,۰۰۰ تومان</p>
-      </a>
-    </div>
-    <div class="product">
-      <a href="product3.html">
-        <h2>سوسیس مرغ پنیری خانگی - نیم کیلو</h2>
-        <p>۲۴۰,۰۰۰ تومان</p>
-      </a>
-    </div>
-  </div>
-</body>
-</html>
+
+    <script>
+        // مدیریت سبد خرید
+        let cart = [];
+        
+        function addToCart(productName) {
+            cart.push(productName);
+            updateCartCount();
+            showAlert(${productName} به سبد خرید اضافه شد);
+        }
+        
+        function updateCartCount() {
