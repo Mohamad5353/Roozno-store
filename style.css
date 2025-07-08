@@ -1,0 +1,36 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+}
+
+h1 {
+    color: #d10a0a;
+    font-size: 28px;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.add-to-cart {
+    background: #d10a0a;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #b30808;
+}
